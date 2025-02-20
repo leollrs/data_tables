@@ -26,3 +26,7 @@ try:
     st.dataframe(licitaciones_df)
 except Exception as e:
     st.error(f"Error loading licitaciones_data.csv: {e}")
+    
+st.subheader("Search Contracts:")
+tables_url = "https://searchallpr.streamlit.app"  # Replace with your actual URL
+st.markdown(f"[Click here to access contract search]({tables_url})")
